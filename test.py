@@ -1,12 +1,10 @@
-from Information import *
-
+from Bytes import *
+from constants import true, false
 
 def main():
-    a = Information(1, 'vfd')
-    b = Information(5, 'Mb')
-    summ = a + b
-    print(summ)
-
+    a = Bytes()
+    b = Bytes(a)
+    print(b)
 
 if __name__ == '__main__':
     main()
