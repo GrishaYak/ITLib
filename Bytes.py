@@ -33,8 +33,8 @@ def parse_uom(uom):
 
 
 def _parse_other(other):
-    if type(other) is bool:
-        return Bytes(1) if other else Bytes()
+    if type(other) is bool or type(other) is float:
+        other = int(other)
     if type(other) is int:
         return Bytes(other)
     return other
@@ -119,13 +119,16 @@ class Bytes:
         res.auto_scale()
         return res
 
+    def __int__(self):
+        return int(self.value)
+
     def __add__(self, other):
         other = _parse_other(other)
         summ = Bytes(self.value_in_bits + other.value_in_bits)
         return summ.get_auto_scaled()
 
     def __neg__(self):
-        return Bytes(-self.value_in_bits, uom=self.uom)
+        return Bytes(-self.value, uom=self.uom)
 
     def __sub__(self, other):
         return self + (-other)

@@ -20,7 +20,7 @@ def translate_from_10(num, base):
     return Num(res, base)
 
 def convert_to_num(value):
-    """Returns Num that responds to given value
+    """Returns Num that corresponds to given value
     :param value: int, float, bool or even Num"""
     if isinstance(value, float) or isinstance(value, bool):
         value = int(value)

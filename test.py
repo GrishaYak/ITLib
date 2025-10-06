@@ -4,8 +4,8 @@ from Bytes import *
 from constants import true, false
 
 def main():
-    a = Num(169, 13)
-    print(a)
+    a = -Bytes(128)
+    print(a.get_auto_scaled())
 
 if __name__ == '__main__':
     main()

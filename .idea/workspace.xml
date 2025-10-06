@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a33fc50-d824-4681-ad7a-457b720e4960" name="Changes" comment="Added lots of features, altered some">
+    <list default="true" id="1a33fc50-d824-4681-ad7a-457b720e4960" name="Changes" comment="Improved Num class">
+      <change afterPath="$PROJECT_DIR$/homework/answers.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/task1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/task2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/task3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/task4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Errors.py" beforeDir="false" afterPath="$PROJECT_DIR$/Errors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bytes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bytes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Num.py" beforeDir="false" afterPath="$PROJECT_DIR$/Num.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pictures.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,16 +54,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.Information.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Information.executor": "Debug",
+    "Python.Pictures.executor": "Run",
+    "Python.task1.executor": "Run",
+    "Python.task2.executor": "Run",
+    "Python.task3.executor": "Run",
+    "Python.task4.executor": "Run",
+    "Python.test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\MyLib" />
@@ -123,12 +134,32 @@
       <option name="project" value="LOCAL" />
       <updated>1758996849417</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Improved Num class">
+      <option name="closed" value="true" />
+      <created>1759506679562</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1759506679562</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Information class is working" />
     <MESSAGE value="Added lots of features, altered some" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added lots of features, altered some" />
+    <MESSAGE value="Improved Num class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved Num class" />
   </component>
 </project>

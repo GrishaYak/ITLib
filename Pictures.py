@@ -1,5 +1,5 @@
 from Bytes import Bytes
-
+from math import ceil
 
 class Picture:
     def __init__(self, resolution=-1, colors=-1, weight=-1, pixel=-1, k=1, b=0, h=-1, w=-1, total_weight=-1):
@@ -35,11 +35,16 @@ class Picture:
         self._count_total_weight()
 
     def _count_colors(self):
-        if self.pixel == -1:
+        if self.pixel != -1:
+            self.colors = 1 << self.pixel
             return
-        self.colors = 1 << self.pixel
+        if self.weight != -1 and self.resolution != -1:
+            self.pixel = ceil(self.weight.value_in_bits / self.resolution)
+            self.colors = 1 << self.pixel
 
     def _count_pixel(self):
+        if self.pixel != -1:
+            return
         if self.colors == -1:
             return
         colors = self.colors
@@ -60,7 +65,7 @@ class Picture:
     def _count_total_weight(self):
         if self.weight == -1:
             return
-        self.total_weight = Bytes(self.k * (self.weight + self.b))
+        self.total_weight = Bytes((self.weight + self.b) * self.k)
 
 
 
